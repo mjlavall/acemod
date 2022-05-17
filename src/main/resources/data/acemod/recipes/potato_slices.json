@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      {
+        "item": "minecraft:potato"
+      }
+    ],
+    "result": {
+      "item": "acemod:potato_slice",
+      "count": 8
+    }
+  }

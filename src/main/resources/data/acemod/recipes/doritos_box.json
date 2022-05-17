@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      {
+        "item": "acemod:doritos_bag"
+      },
+      {
+        "item": "acemod:doritos_bag"
+      },
+      {
+        "item": "acemod:doritos_bag"
+      },
+      {
+        "item": "acemod:doritos_bag"
+      },
+      {
+        "item": "acemod:doritos_bag"
+      },
+      {
+        "item": "acemod:doritos_bag"
+      },
+      {
+        "item": "acemod:doritos_bag"
+      },
+      {
+        "item": "acemod:doritos_bag"
+      },
+      {
+        "item": "acemod:doritos_bag"
+      }
+    ],
+    "result": {
+      "item": "acemod:doritos_box",
+      "count": 1
+    }
+  }
