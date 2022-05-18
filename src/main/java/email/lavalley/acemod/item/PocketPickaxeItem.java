@@ -1,5 +1,6 @@
 package email.lavalley.acemod.item;
 
+import email.lavalley.acemod.setup.Registration;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.damagesource.DamageSource;
@@ -11,8 +12,8 @@ import net.minecraft.world.level.Level;
 
 public class PocketPickaxeItem extends PickaxeItem {
 
-    public PocketPickaxeItem(Properties props, int damage, float speed) {
-        super(Tiers.NETHERITE, damage, speed, props);
+    public PocketPickaxeItem(Properties props) {
+        super(Tiers.NETHERITE, 100, 100, props.defaultDurability(1000));
     }
     
     @Override
@@ -27,7 +28,7 @@ public class PocketPickaxeItem extends PickaxeItem {
 
     @Override
     public boolean isValidRepairItem(ItemStack a, ItemStack b) {
-        return b.is(ItemInit.DORITO.get());
+        return b.is(Registration.DORITO.get());
     }
 
     @Override

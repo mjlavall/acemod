@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "acemod:items/acehead"
+    "layer0": "acemod:item/acehead"
   }
 }

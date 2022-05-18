@@ -1,8 +1,8 @@
 {
     "parent": "minecraft:block/orientable",
     "textures": {
-        "top": "acemod:blocks/doritos_box_top",
-        "front": "acemod:blocks/doritos_box_front",
-        "side": "acemod:blocks/doritos_box_side"
+        "top": "acemod:block/doritos_box_top",
+        "front": "acemod:block/doritos_box_front",
+        "side": "acemod:block/doritos_box_side"
     }
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "acemod:block/mysterious_ore_overworld"
+  }
+}

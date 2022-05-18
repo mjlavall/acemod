@@ -4,6 +4,8 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
+
+import email.lavalley.acemod.setup.Registration;
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -24,15 +26,13 @@ import net.minecraft.world.phys.BlockHitResult;
 
 public class EllaHeadItem extends TeleportItem {
 
-    private final int freeze;
+    private final int freeze = 60;
     private final Map<Material, Block> freezeMap;
     private final Collection<Material> snowMats;
     private final Block defaultFrozenBlock = Blocks.SNOW_BLOCK;
 
-    public EllaHeadItem(Properties props, int range, int freezeTicks, int cooldownTicks) {
-        super(props, range, cooldownTicks);
-
-        freeze = freezeTicks;
+    public EllaHeadItem(Properties props) {
+        super(props.defaultDurability(1000), 25, 20);
 
         snowMats = Arrays.asList(
             Material.SNOW,
@@ -178,7 +178,7 @@ public class EllaHeadItem extends TeleportItem {
 
     @Override
     public boolean isValidRepairItem(ItemStack tool, ItemStack material) {
-        return material.getItem() == ItemInit.DORITO.get();
+        return material.getItem() == Registration.DORITO.get();
     }
 
     @Override

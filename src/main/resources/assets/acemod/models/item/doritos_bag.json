@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "acemod:items/doritos_bag"
+    "layer0": "acemod:item/doritos_bag"
   }
 }

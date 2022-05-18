@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "acemod:mysterious_ore_overworld",
+    "acemod:mysterious_ore_nether",
+    "acemod:mysterious_ore_end",
+    "acemod:mysterious_ore_deepslate"
+  ]
+}

@@ -2,6 +2,8 @@ package email.lavalley.acemod.item;
 
 import java.util.Arrays;
 import java.util.Collection;
+
+import email.lavalley.acemod.setup.Registration;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundEvents;
@@ -21,13 +23,12 @@ import net.minecraft.world.phys.BlockHitResult;
 
 public class AceHeadItem extends TeleportItem {
 
-    private final int slowFall;
+    private final int slowFall = 60;
     private final Collection<Material> invalidMaterials;
 
-    public AceHeadItem(Properties props, int range, int slowFallTicks, int cooldownTicks) {
-        super(props, range, cooldownTicks);
+    public AceHeadItem(Properties props) {
+        super(props.defaultDurability(1000), 75, 20);
 
-        slowFall = slowFallTicks;
         invalidMaterials = Arrays.asList(
             Material.WATER,
             Material.LAVA
@@ -73,7 +74,7 @@ public class AceHeadItem extends TeleportItem {
 
     @Override
     public boolean isValidRepairItem(ItemStack tool, ItemStack material) {
-        return material.getItem() == ItemInit.DORITO.get();
+        return material.getItem() == Registration.DORITO.get();
     }
 
     @Override
